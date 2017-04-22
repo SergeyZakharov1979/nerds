@@ -780,7 +780,7 @@ a.social-btn:active {
 .discount {
   margin-top: -7px;
 }
-
+/*Модальное окно: Напишите нам*/
 .modal-write-us {
   position: fixed;
   top: 50%;
@@ -844,6 +844,7 @@ a.social-btn:active {
   padding: 13px;
 
   border: 2px solid #d7dcde;
+  border-radius: 4px;
 }
 
 .write-us-form textarea {
@@ -852,14 +853,49 @@ a.social-btn:active {
   padding: 13px;
 
   border: 2px solid #d7dcde;
+  border-radius: 4px;
 }
 
-.write-us-form input[placeholder],
-.write-us-form textarea[placeholder] {
+.write-us-form input:hover,
+.write-us-form textarea:hover
+ {
+  border: 2px solid #b4b9bb;
+}
+
+.write-us-form input:focus,
+.write-us-form textarea:focus
+ {
+  border: 2px solid #000000;
+  border-radius: 4px;
+  outline: none;
+}
+
+.write-us-form input::-webkit-input-placeholder,
+.write-us-form textarea::-webkit-input-placeholder {
   font: 400 16px/18px "Roboto", "Arial", sans-serif;
   color: #d7dcde;
 }
 
+.write-us-form input:focus::-webkit-input-placeholder,
+.write-us-form textarea:focus::-webkit-input-placeholder {
+  font: 400 16px/18px "Roboto", "Arial", sans-serif;
+  color: #444444;
+} 
+
+.invalid input::-webkit-input-placeholder,
+.invalid textarea::-webkit-input-placeholder {
+  font: 400 16px/18px "Roboto", "Arial", sans-serif;
+  color: #e74246;
+}
+
+.invalid input,
+.invalid textarea {
+  border: 2px solid #e74246;
+  border-radius: 4px;
+  outline: none;
+}  
+
+/*Кнопка: Отправить*/
 .write-us-form button {
   width: 260px;
   margin-top: 28px;
@@ -877,13 +913,16 @@ a.social-btn:active {
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 0 #c13135;
 }
-
+/*Кнопка закрытия модального окна*/
 .close-write-us {
   position: absolute;
   top: 78px;
   right: 90px;
   width: 21px;
   height: 21px;
+
+  background: none;
+  border: none;
 
   overflow: hidden;
   text-indent: -1000px;
@@ -894,7 +933,6 @@ a.social-btn:active {
   content: "";
 
   position: absolute;
-
   top: 8px;
   right: 0px;
   z-index: 200;
@@ -902,7 +940,8 @@ a.social-btn:active {
   width: 23px;
   height: 4px;
 
-  background-color: #fecccd;
+  background-color: #fb565a;
+  opacity: 0.3;
 }
 
 .close-write-us::after {
@@ -911,6 +950,17 @@ a.social-btn:active {
 
 .close-write-us::before {
   transform: rotate(-45deg);
+}
+
+
+.close-write-us:hover::before,
+.close-write-us:hover::after {
+  opacity: 1;
+}
+
+.close-write-us:active::before,
+.close-write-us:active::after {
+  opacity: 0.1;
 }
 
 .layout-flex {
@@ -1053,8 +1103,8 @@ a.social-btn:active {
   opacity: 1;
 }
 
-.disabled {
-  opacity: 0.1;
+label.disabled {
+   opacity: 0.1;
 }
 
 .filter-on-radio-buttons input[type="radio"] + .radiobutton-indicator {
@@ -1088,7 +1138,7 @@ a.social-btn:active {
 
 /*Фильтр преимуществ на чекбоксах*/
 .filter-on-checkbox {
-
+  margin-bottom: 48px;
 }
 
 .filter-on-checkbox h3 {
@@ -1116,6 +1166,14 @@ a.social-btn:active {
   padding-left: 37px;
 }
 
+.filter-on-checkbox label {
+  opacity: 0.4;
+}
+
+.filter-on-checkbox label:hover {
+  opacity: 1;
+}
+
 .filter-on-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: -1px;
@@ -1127,7 +1185,6 @@ a.social-btn:active {
   background-color: #ffffff;
   border: 2px solid #4d4d4d;
   border-radius: 5px;
-  opacity: 0.4;
 }
 
 .filter-on-checkbox input[type="checkbox"]:checked + .checkbox-indicator:before {
@@ -1141,7 +1198,30 @@ a.social-btn:active {
 
   background: #ffffff url("../img/checkbox-on.png");
   background-repeat: no-repeat;
-  opacity: 1;
+}
+
+.form-sidebar button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+
+  font: 500 16px/22px "Roboto", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #eeeeee;
+  border-radius: 4px;
+  border: none;
+}
+
+.form-sidebar button:hover {
+  background-color: #dfdfdf;
+}
+
+.form-sidebar button:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1) ;
 }
 
 /*Каталог*/
