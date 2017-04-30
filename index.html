@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpsNgcJNGVdULteMlzyl8p-wOfz271Y4k"></script>
 </head>
 <body>
 	<header class="main-header">
@@ -133,7 +134,10 @@
 		</div>
 	</main>
 	<footer class="main-footer">
-		<div class="map"><span class="map-mark"></span></div>
+		<div id="map" class="map">
+			<span class="map-mark">
+			</span>
+		</div>
 		<div class="contacts">
 			<h3>NЁRDS DESIGN STUDIO</h3>
 			<p class="adress">
@@ -161,18 +165,18 @@
 	<!-- Модальное окно: Напишите Нам -->
 	<div class="modal-write-us">
 		<h3>Напишите нам</h3>
-		<form class="write-us-form" action="" method="GET">
+		<form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
 			<div class="wrap-modal-form">
 				<label>
 					Ваше имя:
 					<p>
-						<input type="text" placeholder="Представьтесь, пожалуйста">
+						<input type="text" name="login" placeholder="Представьтесь, пожалуйста">
 					</p>
 				</label>
 				<label>
 					Ваш e-mail:
 					<p>
-						<input type="email" placeholder="Для отправки ответа">
+						<input type="email" name="email" placeholder="Для отправки ответа">
 					</p>
 				</label>
 				<label>
@@ -186,5 +190,6 @@
 		</form>
 		<a href="#" class="close-write-us">Закрыть</a>
 	</div>
+	<script src="js/script.js"></script>
 </body>
 </html>

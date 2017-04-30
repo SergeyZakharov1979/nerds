@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpsNgcJNGVdULteMlzyl8p-wOfz271Y4k"></script>
 </head>
 <body>
 	<header class="main-header main-header-inner">
@@ -17,7 +18,7 @@
 			 	<ul>
 			 		<li><a href="#">Студия</a></li>
 			 		<li><a href="#">Клиенты</a></li>
-			 		<li><a href="#">Магазин</a></li>
+			 		<li class="active"><a href="#">Магазин</a></li>
 			 		<li><a href="#">Контакты</a></li>
 			 	</ul>
 			</nav>
@@ -110,111 +111,118 @@
 				</form>
 			</section>
 			<section class="catalog">
-				<div class="sirting-catalog">
+				<div class="sorting-catalog sorting-catalog-layout">
 					<h3>Сортировать:</h3>
 					<div class="sorting-category">
-						<span>По цене</span>
-						<span>По типу</span>
-						<span>По названию</span>
+						<a class="active-item-corting" href="#">По цене</a>
+						<a href="#">По типу</a>
+						<a href="#">По названию</a>
 					</div>
 					<div class="sorting-arrow">
-						<span class="arrow-to-down"></span>
-						<span class="arrow-to-up"></span>
+						<a class="arrow-to-down active-item-corting" href="#"></a>
+						<a class="arrow-to-up" href="#"></a>
 					</div>
 				</div>
-				<section class="catalog-items">
+				<section class="catalog-items catalog-layout">
 					<article class="catalog-item">
-						<div class="browser">
+						<div class="browser browser-layout">
 							<div class="browser-item"></div>
 							<div class="browser-item"></div>
 							<div class="browser-item"></div>
 						</div>
 						<img src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
 						<div class="catalog-item-discription">
-							<h3>Sedona</h3>
-							<p>Информационный сайт для туристов</p>
-							<a href="#" class="catalog-item-price btn">9900 Руб.</a>
+							<h3 class="catalog-item-title">Sedona</h3>
+							<p class="catalog-item-annotation">Информационный сайт<br>
+							 для туристов</p>
+							<a href="#" class="catalog-item-price btn">9 900 Руб.</a>
 						</div>
 					</article>
 					<article class="catalog-item">
-						<div class="browser">
+						<div class="browser browser-layout">
 							<div class="browser-item"></div>
 							<div class="browser-item"></div>
 							<div class="browser-item"></div>
 						</div>
 						<img src="img/img-pink.jpg" width="360" height="576" alt="pink">
 						<div class="catalog-item-discription">
-							<h3>Pink</h3>
-							<p>Развлекательный сайт и социальная сеть</p>
-							<a href="#" class="catalog-item-price btn">8900 Руб.</a>
+							<h3 class="catalog-item-title">Pink App</h3>
+							<p class="catalog-item-annotation">Продуктовый лендинг
+							 приложения для iOS и Android</p>
+							<a href="#" class="catalog-item-price btn">9 900 Руб.</a>
 						</div>
 					</article>
 					<article class="catalog-item">
-						<div class="browser">
+						<div class="browser browser-layout">
 							<div class="browser-item"></div>
 							<div class="browser-item"></div>
 							<div class="browser-item"></div>
 						</div>
 						<img src="img/img-barbershop.jpg" width="360" height="576" alt="barbershop">
 						<div class="catalog-item-discription">
-							<h3>Barbershop</h3>
-							<p>Cайт-магазин для мужчин</p>
-							<a href="#" class="catalog-item-price btn"></a>
+							<h3 class="catalog-item-title">Barbershop</h3>
+							<p class="catalog-item-annotation">Сайт салоны красоты.<br>
+							 Для мужчин, да.</p>
+							<a href="#" class="catalog-item-price btn">9 900 Руб.</a>
 						</div>
 					</article>
 					<article class="catalog-item">
-						<div class="browser">
+						<div class="browser browser-layout">
 							<div class="browser-item"></div>
 							<div class="browser-item"></div>
 							<div class="browser-item"></div>
 						</div>
 						<img src="img/img-mishka.jpg" width="360" height="576" alt="mishka">
 						<div class="catalog-item-discription">
-							<h3>Mishka</h3>
-							<p>Интернет-магазин по продаже мягких игрушек</p>
-							<a href="#" class="catalog-item-price btn"></a>
+							<h3 class="catalog-item-title">Mishka</h3>
+							<p class="catalog-item-annotation">Интернет-магазин<br>
+							 вязаных игрушек</p>
+							<a href="#" class="catalog-item-price btn">9 900 Руб.</a>
 						</div>
 					</article>
 					<article class="catalog-item">
-						<div class="browser">
+						<div class="browser browser-layout">
 							<div class="browser-item"></div>
 							<div class="browser-item"></div>
 							<div class="browser-item"></div>
 						</div>
 						<img src="img/img-aplus.jpg" width="360" height="576" alt="Aplus">
 						<div class="catalog-item-discription">
-							<h3>Aplus</h3>
-							<p>Cайт образовательного учреждения</p>
-							<a href="#" class="catalog-item-price btn"></a>
+							<h3 class="catalog-item-title">A Plus</h3>
+							<p class="catalog-item-annotation">Лендинг курсов повышения квалификации</p>
+							<a href="#" class="catalog-item-price btn">9 900 Руб.</a>
 						</div>
 					</article>
 					<article class="catalog-item">
-						<div class="browser">
+						<div class="browser browser-layout">
 							<div class="browser-item"></div>
 							<div class="browser-item"></div>
 							<div class="browser-item"></div>
 						</div>
 						<img src="img/img-kvast.jpg" width="360" height="576" alt="kvast">
 						<div class="catalog-item-discription">
-							<h3>Kvast</h3>
-							<p>Интернет-магазин по продаже безалкогольных напитков</p>
-							<a href="#" class="catalog-item-price btn"></a>
+							<h3 class="catalog-item-title">Кваст</h3>
+							<p class="catalog-item-annotation">Промо-сайт производителя крафтового кваса</p>
+							<a href="#" class="catalog-item-price btn">9 900 Руб.</a>
 						</div>
 					</article>
 				</section>
 				<section class="pagination">
-					<ul>
-						<li><a href="#">1</a></li>
+					<ul class="pagination-layout">
+						<li><a class="pagination-items-active" href="#">1</a></li>
 						<li><a href="#">2</a></li>
 						<li><a href="#">3</a></li>
-						<li><a href="#">Следующая</a></li>
+						<li class="next"><a href="#">Следующая</a></li>
 					</ul>
 				</section>
 			</section>
 		</div>	
 	</main>
 	<footer class="main-footer">
-		<div class="map"><span class="map-mark"></span></div>
+		<div id="map" class="map">
+			<span class="map-mark">
+			</span>
+		</div>
 		<div class="contacts">
 			<h3>NЁRDS DESIGN STUDIO</h3>
 			<p class="adress">
@@ -242,30 +250,31 @@
 	<!-- Модальное окно: Напишите Нам -->
 	<div class="modal-write-us">
 		<h3>Напишите нам</h3>
-		<form class="write-us-form" action="" method="GET">
+		<form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
 			<div class="wrap-modal-form">
 				<label>
 					Ваше имя:
 					<p>
-						<input type="text" placeholder="Представьтесь, пожалуйста">
+						<input type="text" name="login" placeholder="Представьтесь, пожалуйста">
 					</p>
 				</label>
 				<label>
 					Ваш e-mail:
 					<p>
-						<input type="email" placeholder="Для отправки ответа">
+						<input type="email" name="email" placeholder="Для отправки ответа">
 					</p>
 				</label>
 				<label>
 					Текст письма:
 					<p>
-						<textarea placeholder="В свободной форме"></textarea>
+						<textarea name="message" placeholder="В свободной форме"></textarea>
 					</p>
 				</label>
 			</div>
 			<button class="btn">Отправить</button>
 		</form>
-		<div class="close-write-us"><p>Закрыть</p></div>
+		<a href="#" class="close-write-us">Закрыть</a>
 	</div>
+	<script src="js/script.js"></script>
 </body>
 </html>
