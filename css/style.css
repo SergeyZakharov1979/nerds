@@ -836,26 +836,29 @@ a.social-btn:active {
 }
 
 .write-us-form label {
+  display: inline-block;
   margin-top: 3px;
 
   font: 700 16px/18px "Roboto", "Arial", sans-serif;
 }
 
-.write-us-form label:nth-child(2) {
+.write-us-form p:nth-child(2) {
   margin-left: 40px;
 }
 
-.write-us-form label:nth-child(3) {
-  margin-top: 18px;
+.write-us-form p:nth-child(3) {
+  margin-top: 15px;
+  margin-bottom: 12px;
 }
 
 .write-us-form p {
-  margin-top: 9px;
+  margin-top: 0;
 }
 
 .write-us-form input {
   width: 360px;
   height: 50px;
+  margin-top: 9px;
   padding: 13px;
 
   border: 2px solid #d7dcde;
@@ -865,7 +868,8 @@ a.social-btn:active {
 .write-us-form textarea {
   width: 760px;
   height: 118px;
-  padding: 13px;
+  margin-top: 9px;
+  padding: 12px;
 
   border: 2px solid #d7dcde;
   border-radius: 4px;
