@@ -315,10 +315,6 @@ a.cart:active::before {
   right: 21px;
 }
 
- {
-  display: none;
-}
-
 .slide-3 img {
   position: absolute;
   top: -60px;
